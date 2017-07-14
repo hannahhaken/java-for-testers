@@ -25,4 +25,18 @@ public class UserTest {
                 "password",
                 user.getPassword());
     }
+
+    @Test
+    public void canConstructWithUsernameAndPassword(){
+
+        User user = new User("admin", "pA55w0rD");
+
+        assertEquals("given username expected",
+                "admin",
+                user.getUsername());
+
+        assertEquals("given password expected",
+                "pA55w0rD",
+                user.getUsername());
+    }
 }
