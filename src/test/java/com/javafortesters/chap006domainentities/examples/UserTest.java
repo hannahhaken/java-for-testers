@@ -37,6 +37,18 @@ public class UserTest {
 
         assertEquals("given password expected",
                 "pA55w0rD",
-                user.getUsername());
+                user.getPassword());
+    }
+
+    @Test
+    public void canSetPasswordAfterConstructed() {
+
+        User user = new User();
+
+        user.setPassword("PaZZwor6");
+
+        assertEquals("setter password expected",
+                "PaZZwor6",
+                user.getPassword());
     }
 }

@@ -9,8 +9,10 @@ public class User {
     // made private to stop other classes amending the values of these fields at any point.
 
     public User(){
-        username = "username";
-        password = "password";
+        this("username", "password");
+
+        //username = "username";
+        //password = "password";
     }
 
     public User(String username, String password) {
@@ -24,5 +26,9 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
